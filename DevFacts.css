@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.topic-section {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.topic-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background: linear-gradient(to right, #232526, #414345);
+}
