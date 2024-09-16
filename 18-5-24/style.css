@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header .logo {
+  width: 50px;
+  height: auto;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul li {
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #ff6347;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  background-color: #ffcccb;
+}
+
+tbody tr:nth-child(odd) {
+  background: linear-gradient(to right, #ffcccc, #ffe6e6);
+}
+
+tbody tr:nth-child(even) {
+  background: linear-gradient(to right, #cceeff, #e6f7ff);
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+#about{
+  display: flex;
+  border: 1px solid black;
+}
+
+.container1{
+ margin: 10px;
+}
+.container2{
+  margin: 10px;
+ }
+
+ .container3{
+  margin: 10px;
+ }
+
+/* Contact Form Styles */
+#contactForm {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+#contactForm .form-group {
+  margin-bottom: 15px;
+}
+
+#contactForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+#contactForm textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+#contactForm input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contactForm input[type="submit"]:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+#contactForm input[type="submit"]:active {
+  background-color: #3e8e41;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover {
+  color: #ff6347;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Gradient Backgrounds */
+#home, #about, #table, #contact {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  padding: 40px 0;
+}
+
+#home h2, #about h2, #table h2, #contact h2 {
+  color: #333;
+}
