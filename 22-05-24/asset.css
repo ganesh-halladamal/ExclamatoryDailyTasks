@@ -1,0 +1,23 @@
+   body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .table {
+      margin-top: 20px;
+    }
+    .icon-action {
+      cursor: pointer;
+    }
+    .icon-action:hover {
+      color: #007bff;
+    }
+    @media (max-width: 768px) {
+      .table-responsive {
+        overflow-x: auto;
+      }
+      .table th, .table td {
+        white-space: nowrap;
+      }
+    }

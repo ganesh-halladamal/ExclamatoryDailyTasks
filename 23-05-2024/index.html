@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Commands and Concepts</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #f3f4f6, #eef2f3);
+            color: #343a40;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        h2, h3 {
+            color: #007bff;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .card-body ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .card-body ul li {
+            padding: 5px 0;
+        }
+
+        .differences, .databases, .storage-engines {
+            margin-top: 20px;
+        }
+
+        .differences h3, .databases h3, .storage-engines h3 {
+            color: #28a745;
+        }
+
+        .differences p, .databases p, .storage-engines p {
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 5px solid #28a745;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Database Commands and Concepts</h2>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Create Commands
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>1. CREATE</li>
+                    <li>2. ADD</li>
+                    <li>3. INSERT</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Read Commands
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>1. SELECT</li>
+                    <li>2. FIND </li>
+                    <li>3. GET</li>
+                    <li>4. READ</li>
+                    <li>5. SHOW</li>
+                    <li>6. DESCRIBE</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Update Commands
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>1. UPDATE</li>
+                    <li>2. COMMIT</li>
+                    <li>3. MODIFY</li>
+                    <li>4. ALTER</li>
+                    <li>5. RENAME</li>
+                    <li>6. CHANGE</li>
+                    <li>7. REPLACE</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                Delete Commands
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>1. DELETE</li>
+                    <li>2. DROP</li>
+                    <li>3. TRUNCATE</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="differences">
+            <h3>Differences Between Commands</h3>
+            <p><strong>DELETE vs DROP vs TRUNCATE:</strong><br>
+                DELETE: Removes rows from a table based on a condition. It can be rolled back.<br>
+                DROP: Removes the entire table or database. It cannot be rolled back.<br>
+                TRUNCATE: Removes all rows from a table without logging individual row deletions. It cannot be rolled back.
+            </p>
+            <p><strong>ALTER vs UPDATE:</strong><br>
+                ALTER: Changes the structure of a database object (e.g., adding a column to a table).<br>
+                UPDATE: Modifies the data within the table without changing the table structure.
+            </p>
+            <p><strong>COMMIT vs ROLLBACK:</strong><br>
+                COMMIT: Saves all the changes made during the current transaction to the database. Once committed, the changes cannot be undone.<br>
+                ROLLBACK: Reverts the changes made during the current transaction. It undoes all operations back to the last commit point, restoring the database to its previous state.
+            </p>
+        </div>
+
+        <div class="databases">
+            <h3>Popular Databases and Their Uses</h3>
+            <p><strong>MySQL:</strong> Widely used for web applications, known for its reliability and ease of use.<br>
+                <strong>PostgreSQL:</strong> Known for its advanced features and standards compliance, often used in complex applications.<br>
+                <strong>MongoDB:</strong> NoSQL database, ideal for handling large volumes of unstructured data.<br>
+                <strong>SQLite:</strong> Lightweight, file-based database commonly used in mobile applications.<br>
+                <strong>Oracle:</strong> Used for large-scale applications requiring high performance and security.<br>
+                <!-- <strong>Microsoft SQL Server:</strong> Popular in enterprise environments, known for its integration with other Microsoft products. -->
+            </p>
+        </div>
+
+        <div class="storage-engines">
+            <h3>Storage Engines and Their Explanations</h3>
+            <p><strong>InnoDB (MySQL):</strong> Default storage engine in MySQL, supports transactions and foreign keys.<br>
+                <strong>MyISAM (MySQL):</strong> Non-transactional storage engine, known for its speed in read-heavy applications.<br>
+                <strong>RocksDB:</strong> High-performance, transactional storage engine optimized for fast storage environments.<br>
+                <strong>WiredTiger (MongoDB):</strong> Default storage engine in MongoDB, supports compression and concurrency control.<br>
+                <strong>LevelDB:</strong> Key-value storage engine developed by Google, optimized for read/write operations.<br>
+                <strong>Berkeley DB:</strong> Provides a variety of APIs for developers, supports transactions and replication.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
